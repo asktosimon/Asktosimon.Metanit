@@ -1,4 +1,35 @@
-﻿#region PARAMS
+﻿#region ENUM
+DayTime time = DayTime.Morning;
+
+string phrase = time switch
+{
+    DayTime.Morning => "Good morning!",
+    _ => "Good time"
+};
+
+Console.WriteLine(phrase);
+enum DayTime
+{
+    Morning,
+    Afternoon,
+    Evening,
+    Night
+}
+#endregion
+
+#region SWITCH
+
+int op = 1;
+
+string result = op switch
+{
+    1 => "f",
+    _ => ""
+};
+
+#endregion
+
+#region PARAMS
 void Hay(int num, params string[] names)
 {
     foreach (string name in names)

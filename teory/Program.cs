@@ -1,4 +1,18 @@
-﻿#region ENUM
+﻿
+#region КЛАССЫ
+using teory;
+
+var person = new Person();
+
+person.name = "Andrey";
+person.age = 27;
+
+person.Print();
+
+Console.WriteLine(Person.type);
+#endregion
+
+#region ENUM
 DayTime time = DayTime.Morning;
 
 string phrase = time switch

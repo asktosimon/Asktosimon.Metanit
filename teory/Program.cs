@@ -1,11 +1,13 @@
 ﻿using teory;
 
 #region КОНСТРУКТОРЫ
-/*var lama = new Animal("lama");
-var cheburashka = new Animal();*/
+var lama = new Animal("lama");
+// var cheburashka = new Animal();*/
 
 var personWithAnimal = new Person{ pet = { name = "kazbek"} };
 
+/*(na) = lama
+*/
 Console.WriteLine(personWithAnimal.pet.name);
 #endregion
 

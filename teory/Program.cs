@@ -1,7 +1,15 @@
-﻿
-#region КЛАССЫ
-using teory;
+﻿using teory;
 
+#region КОНСТРУКТОРЫ
+/*var lama = new Animal("lama");
+var cheburashka = new Animal();*/
+
+var personWithAnimal = new Person{ pet = { name = "kazbek"} };
+
+Console.WriteLine(personWithAnimal.pet.name);
+#endregion
+
+/*#region КЛАССЫ
 var person = new Person();
 
 person.name = "Andrey";
@@ -10,9 +18,9 @@ person.age = 27;
 person.Print();
 
 Console.WriteLine(Person.type);
-#endregion
+#endregion*/
 
-#region ENUM
+/*#region ENUM
 DayTime time = DayTime.Morning;
 
 string phrase = time switch
@@ -29,9 +37,9 @@ enum DayTime
     Evening,
     Night
 }
-#endregion
+#endregion*/
 
-#region SWITCH
+/*#region SWITCH
 
 int op = 1;
 
@@ -41,9 +49,9 @@ string result = op switch
     _ => ""
 };
 
-#endregion
+#endregion*/
 
-#region PARAMS
+/*#region PARAMS
 void Hay(int num, params string[] names)
 {
     foreach (string name in names)
@@ -53,9 +61,9 @@ void Hay(int num, params string[] names)
 };
 
 Hay(1, "GEORG", "LAM");
-#endregion
+#endregion*/
 
-#region REF IN OUT
+/*#region REF IN OUT
 void Increment(ref int num)
 {
     num++;
@@ -74,9 +82,9 @@ void Sum(int a, int b, out int sum)
 Sum(1, 3, out int result);
 
 Console.WriteLine(result);
-#endregion
+#endregion*/
 
-#region методы
+/*#region методы
 void PrintPerson(int age, string name, string company = "LG", string st = "test")
 {
     Console.WriteLine($"{age}, {name}, {company}, {st}");
@@ -117,4 +125,4 @@ enum Languages
     ru,
     en
 }
-#endregion
+#endregion*/

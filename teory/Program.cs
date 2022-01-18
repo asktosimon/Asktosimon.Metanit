@@ -1,15 +1,38 @@
 ﻿using teory;
 
-#region КОНСТРУКТОРЫ
+#region
+
+#endregion
+
+#region СТРУКТУРЫ
+/*var person = new Person();
+person.name = "Brad";
+
+var empl = person with { name = "Dan" };
+
+struct Person
+{
+    public string name;
+    public int age;
+
+    public void Print()
+    {
+        Console.WriteLine(name);
+        Console.WriteLine(age);
+    }
+}*/
+#endregion
+
+/*#region КОНСТРУКТОРЫ
 var lama = new Animal("lama");
-// var cheburashka = new Animal();*/
+var cheburashka = new Animal();
 
 var personWithAnimal = new Person{ pet = { name = "kazbek"} };
 
-/*(na) = lama
-*/
+(na) = lama
+
 Console.WriteLine(personWithAnimal.pet.name);
-#endregion
+#endregion*/
 
 /*#region КЛАССЫ
 var person = new Person();

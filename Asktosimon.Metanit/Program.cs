@@ -1,8 +1,6 @@
-﻿using Metan;
-// Попробовать реализовать 
+﻿// Попробовать реализовать 
 // https://academy.yandex.ru/posts/osnovnye-vidy-sortirovok-i-primery-ikh-realizatsii
 
-var h = new Human("Bob");
 int[] myArray = { 1, 10, 4, 23, 223, 77, 43, 2, 4 }; // 1, 2, 4, 4, 10,23, 43, 77, 223
 
 #region Bublesort

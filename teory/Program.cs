@@ -1,7 +1,42 @@
 ﻿using teory;
+#region Перегрузка методов
+class Met
+{
+    void Sum(int a, int b)
+    {
+        Console.WriteLine(a + b);
+    }
 
-#region
+    int Sum(int a)
+    {
+        return a;
+    }
+}
+#endregion
+#region Свойства
+var a = new Newclass();
+a.Name = "HELLO";
 
+class Newclass
+{
+    string? _name;
+
+    public string? Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public string? SecondName { get; }
+}
+#endregion
+#region Модификаторы доступа
+// private только в классе
+// private protected в классе и производном но в своей сборке
+// protected в производных сборках
+// internal везде но только в своей сборке
+// protected internal везде в своей сборке и в производных классах в других собрках
+// public везде
 #endregion
 
 #region СТРУКТУРЫ

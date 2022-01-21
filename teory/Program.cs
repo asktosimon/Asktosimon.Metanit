@@ -1,6 +1,6 @@
 ﻿using teory;
 #region Перегрузка методов
-class Met
+/*class Met
 {
     void Sum(int a, int b)
     {
@@ -11,8 +11,9 @@ class Met
     {
         return a;
     }
-}
+}*/
 #endregion
+
 #region Свойства
 var a = new Newclass();
 a.Name = "HELLO";
@@ -30,6 +31,7 @@ class Newclass
     public string? SecondName { get; }
 }
 #endregion
+
 #region Модификаторы доступа
 // private только в классе
 // private protected в классе и производном но в своей сборке
@@ -58,30 +60,30 @@ struct Person
 }*/
 #endregion
 
-/*#region КОНСТРУКТОРЫ
-var lama = new Animal("lama");
+#region КОНСТРУКТОРЫ
+/*var lama = new Animal("lama");
 var cheburashka = new Animal();
 
-var personWithAnimal = new Person{ pet = { name = "kazbek"} };
+var personWithAnimal = new Person { pet = { name = "kazbek" } };
 
 (na) = lama
 
-Console.WriteLine(personWithAnimal.pet.name);
-#endregion*/
+Console.WriteLine(personWithAnimal.pet.name);*/
+#endregion
 
-/*#region КЛАССЫ
-var person = new Person();
+#region КЛАССЫ
+/*var person = new Person();
 
 person.name = "Andrey";
 person.age = 27;
 
 person.Print();
 
-Console.WriteLine(Person.type);
-#endregion*/
+Console.WriteLine(Person.type);*/
+#endregion
 
-/*#region ENUM
-DayTime time = DayTime.Morning;
+#region ENUM
+/*DayTime time = DayTime.Morning;
 
 string phrase = time switch
 {
@@ -96,23 +98,23 @@ enum DayTime
     Afternoon,
     Evening,
     Night
-}
-#endregion*/
+}*/
+#endregion
 
-/*#region SWITCH
+#region SWITCH
 
-int op = 1;
+/*int op = 1;
 
 string result = op switch
 {
     1 => "f",
     _ => ""
 };
+*/
+#endregion
 
-#endregion*/
-
-/*#region PARAMS
-void Hay(int num, params string[] names)
+#region PARAMS
+/*void Hay(int num, params string[] names)
 {
     foreach (string name in names)
     {
@@ -120,11 +122,11 @@ void Hay(int num, params string[] names)
     }
 };
 
-Hay(1, "GEORG", "LAM");
-#endregion*/
+Hay(1, "GEORG", "LAM");*/
+#endregion
 
-/*#region REF IN OUT
-void Increment(ref int num)
+#region REF IN OUT
+/*void Increment(ref int num)
 {
     num++;
 }
@@ -141,11 +143,11 @@ void Sum(int a, int b, out int sum)
 
 Sum(1, 3, out int result);
 
-Console.WriteLine(result);
-#endregion*/
+Console.WriteLine(result);*/
+#endregion
 
-/*#region методы
-void PrintPerson(int age, string name, string company = "LG", string st = "test")
+#region методы
+/*void PrintPerson(int age, string name, string company = "LG", string st = "test")
 {
     Console.WriteLine($"{age}, {name}, {company}, {st}");
 }
@@ -184,5 +186,5 @@ enum Languages
 {
     ru,
     en
-}
-#endregion*/
+}*/
+#endregion

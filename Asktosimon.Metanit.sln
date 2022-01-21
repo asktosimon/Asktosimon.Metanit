@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asktosimon.Metanit", "Askto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "teory", "teory\teory.csproj", "{E322ED04-33FC-4DB2-BEDD-400C86B4A1DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metan", "Metan\Metan.csproj", "{1A1047B0-E7C0-47EA-906F-E6770778DAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metan", "Metan\Metan.csproj", "{1A1047B0-E7C0-47EA-906F-E6770778DAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendBox", "sendBox\sendBox.csproj", "{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1A1047B0-E7C0-47EA-906F-E6770778DAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A1047B0-E7C0-47EA-906F-E6770778DAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A1047B0-E7C0-47EA-906F-E6770778DAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

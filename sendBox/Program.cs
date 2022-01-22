@@ -1,19 +1,28 @@
-﻿var pen = new Pen() { color = "Синий", cost = 100 };
-Console.WriteLine(pen.color);
-class Pen
+﻿class Rectangle
 {
-    public string color;
-    public int cost;
+    int a;
+    int b;
 
-    public Pen()
+    int Square()
     {
-        color = "Черный";
-        cost = 100;
+        return (a * b);
     }
 
-    public Pen(string color, int cost)
+    public Rectangle()
     {
-        this.color = color;
-        this.cost = cost;
+        a = 6;
+        b = 4;
+    }
+
+    public Rectangle(int x)
+    {
+        a = x;
+        b = x;
+    }
+
+    public Rectangle(int a, int b)
+    {
+        this.a = a;
+        this.b = b;
     }
 }

@@ -1,21 +1,19 @@
-﻿var arr = new int[1] { 0 };
-GetString(arr);
-
-Console.WriteLine(arr[0]);
-
-
-void GetString(in int[] arr)
+﻿var pen = new Pen() { color = "Синий", cost = 100 };
+Console.WriteLine(pen.color);
+class Pen
 {
-    arr[0] = 3;
+    public string color;
+    public int cost;
+
+    public Pen()
+    {
+        color = "Черный";
+        cost = 100;
+    }
+
+    public Pen(string color, int cost)
+    {
+        this.color = color;
+        this.cost = cost;
+    }
 }
-
-enum DyasOfWeek
-{
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Saturday,
-    Sunday
-};

@@ -1,6 +1,12 @@
-﻿var e = new Employee();
-var c = (Person)e;
+﻿SayHello greater = delegate()
+{
+    Console.WriteLine("Hel");
+};
+greater();
 
-class Person { }
-class Employee : Person { }
-class Client : Person { }
+void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+delegate void SayHello();

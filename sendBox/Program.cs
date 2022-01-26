@@ -1,14 +1,28 @@
-﻿var a = Outer();
-var b = Outer();
-var c = b(2);
+﻿var s = new Spider();
 
-Func<int, int> Outer()
+interface ICreature
 {
-    var x = 0;
-    return (int d) =>
+    void Move()
     {
-        x++;
-        Console.WriteLine(x);
-        return x;
-    };
+        Console.WriteLine("MOVE ICreature");
+    }
+}
+
+interface IAnimal
+{
+    void Move()
+    {
+        Console.WriteLine("MOVE IAnimal");
+    }
+}
+
+class Spider : ICreature, IAnimal
+{
+    // void ICreature.Move() => Console.WriteLine("Dddd");
+    // void IAnimal.Move() => Console.WriteLine("Dddd");
+
+    public void Move()
+    {
+        ((ICreature)this).Move();
+    }
 }

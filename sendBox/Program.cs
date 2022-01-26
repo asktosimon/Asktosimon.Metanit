@@ -1,12 +1,12 @@
-﻿SayHello greater = delegate()
-{
-    Console.WriteLine("Hel");
-};
-greater();
+﻿var a = Outer();
+var b = Outer();
 
-void Hello()
+Action Outer()
 {
-    Console.WriteLine("Hello");
+    var x = 0;
+    return () =>
+    {
+        x++;
+        Console.WriteLine(x);
+    };
 }
-
-delegate void SayHello();

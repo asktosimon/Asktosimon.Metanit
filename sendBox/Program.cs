@@ -1,12 +1,14 @@
 ﻿var a = Outer();
 var b = Outer();
+var c = b(2);
 
-Action Outer()
+Func<int, int> Outer()
 {
     var x = 0;
-    return () =>
+    return (int d) =>
     {
         x++;
         Console.WriteLine(x);
+        return x;
     };
 }

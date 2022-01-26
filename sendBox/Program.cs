@@ -1,28 +1,27 @@
-﻿var s = new Spider();
+﻿using System.Collections.Generic;
+var a1 = new string[] { "arp", "live", "strong" };
+var a2 = new string[] { "lively", "alive", "harp", "sharp", "armstrong"  };
 
-interface ICreature
+var r = inArray(a1, a2);
+
+Console.WriteLine(String.Join(", ", r));
+
+string[] inArray(string[] array1, string[] array2)
 {
-    void Move()
-    {
-        Console.WriteLine("MOVE ICreature");
-    }
-}
+    var result = new List<string>();
+    var s = String.Join(" ", array2);
 
-interface IAnimal
-{
-    void Move()
+    foreach (var a in array1)
     {
-        Console.WriteLine("MOVE IAnimal");
+        var index = s.IndexOf(a);
+        if (index != -1)
+        {
+            result.Add(a);
+        }
     }
-}
 
-class Spider : ICreature, IAnimal
-{
-    // void ICreature.Move() => Console.WriteLine("Dddd");
-    // void IAnimal.Move() => Console.WriteLine("Dddd");
+    var rArr = result.ToArray();
+    Array.Sort(rArr);
 
-    public void Move()
-    {
-        ((ICreature)this).Move();
-    }
+    return rArr;
 }

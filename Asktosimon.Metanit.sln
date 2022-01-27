@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "teory", "teory\teory.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metan", "Metan\Metan.csproj", "{1A1047B0-E7C0-47EA-906F-E6770778DAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendBox", "sendBox\sendBox.csproj", "{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sendBox", "sendBox\sendBox.csproj", "{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{7F3FA778-B5F0-4CA5-9A47-C03BD40B0EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerAPI", "ServerAPI\ServerAPI.csproj", "{B3F7CAE7-82C9-4B81-B376-133954B9D46C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5D718D-BEDF-4D9D-9983-4F3E7EA25027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F3FA778-B5F0-4CA5-9A47-C03BD40B0EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3FA778-B5F0-4CA5-9A47-C03BD40B0EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3FA778-B5F0-4CA5-9A47-C03BD40B0EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3FA778-B5F0-4CA5-9A47-C03BD40B0EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F7CAE7-82C9-4B81-B376-133954B9D46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F7CAE7-82C9-4B81-B376-133954B9D46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F7CAE7-82C9-4B81-B376-133954B9D46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F7CAE7-82C9-4B81-B376-133954B9D46C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

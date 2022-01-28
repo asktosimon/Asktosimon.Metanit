@@ -1,23 +1,16 @@
-﻿var a = new Man(12);
+﻿var a = new Counter { Value = 1 };
+var b = new Counter { Value = 2 };
 
+var c = a + b;
 
-class Person
+Console.WriteLine(c.Value);
+
+class Counter
 {
-    protected int ID;
+    public int Value { get; set; }
 
-    public Person (int ID)
+    public static Counter operator + (Counter a, Counter b)
     {
-        this.ID = ID;
-        this.ID++;
-    }
-}
-
-class Man : Person
-{
-
-    public Man(int ID) : base (ID)
-    {
-        this.ID++;
-        Console.WriteLine (this.ID);
+        return new Counter { Value = a.Value + b.Value };
     }
 }

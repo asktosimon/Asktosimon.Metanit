@@ -1,31 +1,9 @@
-﻿class A
+﻿class Obj
 {
-    public virtual void Say()
-    {
-        Console.WriteLine("A");
-    }
-}
+    public int Value;
 
-class B : A
-{
-    public override void Say()
+    public static Obj operator + (Obj a, Obj b)
     {
-        Console.WriteLine("B");
-    }
-}
-
-class C : A
-{
-    public new void Say()
-    {
-        Console.WriteLine('C');
-    }
-}
-
-class D : B
-{
-    public override void Say()
-    {
-        Console.WriteLine("D");
+        return new Obj { Value = a.Value + b.Value };
     }
 }

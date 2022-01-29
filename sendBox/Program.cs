@@ -1,9 +1,17 @@
-﻿class Obj
+﻿abstract class Person
 {
-    public int Value;
+    public abstract void Say();
+}
 
-    public static Obj operator + (Obj a, Obj b)
+class Employee : Person
+{
+    public override void Say()
     {
-        return new Obj { Value = a.Value + b.Value };
+        Console.WriteLine("Hello");
+    }
+
+    public void Say(string phrase)
+    {
+        Console.WriteLine(phrase);
     }
 }

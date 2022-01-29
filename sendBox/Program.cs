@@ -1,17 +1,18 @@
-﻿abstract class Person
+﻿abstract class ComputerPart
 {
-    public abstract void Say();
+    public abstract void Work();
 }
 
-class Employee : Person
-{
-    public override void Say()
-    {
-        Console.WriteLine("Hello");
-    }
+class MotherBoard: ComputerPart {
+    public override void Work() { }
+}
 
-    public void Say(string phrase)
-    {
-        Console.WriteLine(phrase);
-    }
+class Processor: ComputerPart
+{
+    public override void Work() { }
+}
+
+class GraphicCard: ComputerPart 
+{
+    public override void Work() { }
 }

@@ -1,16 +1,19 @@
-﻿var x = 1;
-var y = 2;
+﻿using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 
-Console.WriteLine($"{x}, {y}");
-Obj.Swap(ref x, ref y);
-Console.WriteLine($"{x}, {y}");
-class Obj
+var people = new ObservableCollection<string>();
+
+NotifyCollectionChangedEventHandler handler = (sender, e) =>
 {
-    public static void Swap(ref int num1, ref int num2)
+    var a = e.Action switch
     {
-        var temp = num1;
-        num1 = num2;
-        num2 = temp;
-    }
-}
+        NotifyCollectionChangedAction.Add => "sdsdsd",
+        _ => "sdsdsd"
+    };
 
+    Console.WriteLine(a);
+};
+
+people.CollectionChanged += handler;
+
+people.Add("BOB");

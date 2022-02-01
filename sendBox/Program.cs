@@ -1,12 +1,5 @@
-﻿using System.Collections;
+﻿string firstName = "Andrey";
+string secondName = "Simanovich";
 
-string[] people = new string[] { "TOM" };
+string fullName = string.Concat(firstName, secondName);
 
-IEnumerator enumerator = people.GetEnumerator();
-
-while(enumerator.MoveNext())
-{
-    Console.WriteLine(enumerator.Current);
-}
-
-enumerator.Reset();

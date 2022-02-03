@@ -1,7 +1,6 @@
-﻿string firstName = "Andrey";
-string secondName = "Simanovich";
-double price = 2.7;
+﻿Console.WriteLine(DateTime.Now);
+Console.WriteLine(DateTime.UtcNow);
+Console.WriteLine(DateTime.Today);
 
-string fullName = string.Format("firstName: {0}, secondName: {1}, price: {2:C2}", firstName, secondName, price);
-
-Console.WriteLine(fullName);
+var date = DateTime.Now.ToString("hh:mm:ss");
+Console.WriteLine(date);

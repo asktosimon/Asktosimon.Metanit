@@ -1,18 +1,15 @@
-﻿// Task.Run
-// Task.Factory.StartNEw
-Task<int> task = Task<int>.Run(() => {
+﻿await DoSomethingAsync();
 
-    Console.WriteLine("RUN");
+async Task DoSomethingAsync()
+{
+    Console.WriteLine("start do something");
+    await Task.Run(() => DoElseSomethingAsync());
+    Console.WriteLine("end do something");
+}
 
-    Task.Factory.StartNew(() => {
-
-        Console.WriteLine("START NEW");
-    }, TaskCreationOptions.AttachedToParent);
-
-    Console.WriteLine("EXIT RUN");
-
-    return 2;
-});
-
-var a = task.Result;
-Console.WriteLine(a);
+async void DoElseSomethingAsync()
+{
+    Console.WriteLine("start doing something else");
+    await Task.Delay(4000);
+    Console.WriteLine("end doing something else");
+}

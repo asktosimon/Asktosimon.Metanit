@@ -1,6 +1,17 @@
-﻿Console.WriteLine(DateTime.Now);
-Console.WriteLine(DateTime.UtcNow);
-Console.WriteLine(DateTime.Today);
+﻿Thread myThread = new Thread(new ThreadStart(DoSomething));
 
-var date = DateTime.Now.ToString("hh:mm:ss");
-Console.WriteLine(date);
+myThread.Start();
+
+foreach (var i in Enumerable.Range(0, 100))
+{
+    Console.WriteLine($"{i} ОСНОВНОЙ поток");
+}
+
+void DoSomething()
+{
+    foreach(var i in Enumerable.Range(0, 100))
+    {
+        Console.WriteLine($"{i} неосновной поток");
+        Thread.Sleep(2000);
+    }
+}

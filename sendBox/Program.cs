@@ -1,17 +1,18 @@
-﻿Thread myThread = new Thread(new ThreadStart(DoSomething));
+﻿// Task.Run
+// Task.Factory.StartNEw
+Task<int> task = Task<int>.Run(() => {
 
-myThread.Start();
+    Console.WriteLine("RUN");
 
-foreach (var i in Enumerable.Range(0, 100))
-{
-    Console.WriteLine($"{i} ОСНОВНОЙ поток");
-}
+    Task.Factory.StartNew(() => {
 
-void DoSomething()
-{
-    foreach(var i in Enumerable.Range(0, 100))
-    {
-        Console.WriteLine($"{i} неосновной поток");
-        Thread.Sleep(2000);
-    }
-}
+        Console.WriteLine("START NEW");
+    }, TaskCreationOptions.AttachedToParent);
+
+    Console.WriteLine("EXIT RUN");
+
+    return 2;
+});
+
+var a = task.Result;
+Console.WriteLine(a);

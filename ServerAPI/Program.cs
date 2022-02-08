@@ -1,8 +1,15 @@
+using ServerAPI.IServices;
+using ServerAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTimeService();
+
 var app = builder.Build();
 
+
 // app.UseMiddleware<TokenMiddleware>();
-app.UseToken();
+/*app.UseToken();
 app.Map("/test", appBuilder =>
 {
     appBuilder.Use(async (context, next) =>
@@ -20,7 +27,7 @@ app.Map("/test", appBuilder =>
 
 app.Use(HandleResponseUse);
 
-app.Run(HandleResponseJSON);
+app.Run(HandleResponseJSON);*/
 
 app.Run();
 
@@ -92,5 +99,13 @@ public static class TokenE
     public static IApplicationBuilder UseToken(this IApplicationBuilder builder)
     {
         return builder.UseMiddleware<TokenMiddleware>();
+    }
+}
+
+static class MyExtensions
+{
+    public static void AddTimeService(this IServiceCollection services)
+    {
+        services.AddTransient<ITimeService, ShortTimeService>();
     }
 }

@@ -4,6 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // builder.Services.AddControllers();
 
+builder.Configuration.AddInMemoryCollection(new Dictionary<string, string>
+{
+    { "Name", "Tom"},
+    {"age", "37" }
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
